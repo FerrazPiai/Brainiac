@@ -1,0 +1,28 @@
+{
+  "name": "brainiac",
+  "version": "2.1.0",
+  "description": "Brainiac — Task Manager com IA e integração Meet Agent",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "web": "node server.js",
+    "agent": "node agent/agent.js",
+    "agent:watch": "node agent/agent.js --watch"
+  },
+  "keywords": [
+    "task-manager",
+    "brain",
+    "knowledge-base"
+  ],
+  "author": "Pedro",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.52.0",
+    "dotenv": "^16.6.1",
+    "express": "^4.21.0",
+    "googleapis": "^171.4.0"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
+}
