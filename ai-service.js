@@ -30,7 +30,7 @@ class AIService {
         : '';
 
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 4096,
         messages: [{
           role: 'user',
@@ -165,7 +165,7 @@ RETORNE APENAS JSON VÁLIDO (sem markdown, sem explicações):
   async analyzeDocument(content, documentName) {
     try {
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 2048,
         messages: [{
           role: 'user',
@@ -216,7 +216,7 @@ IMPORTANTE: Retorne APENAS o JSON, sem explicações.`
       ).join('\n');
 
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 1024,
         messages: [{
           role: 'user',
@@ -257,7 +257,7 @@ IMPORTANTE: Retorne APENAS o JSON, sem explicações.`
   async generateDailySummary(todayTasks, overdueTasks, completedTasks) {
     try {
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 512,
         messages: [{
           role: 'user',
@@ -284,7 +284,7 @@ Gere um resumo motivacional e prático em 2-3 frases curtas.`
   async extractTasksFromText(text) {
     try {
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 1024,
         messages: [{
           role: 'user',
@@ -324,7 +324,7 @@ IMPORTANTE: Retorne APENAS o JSON, sem explicações.`
   async improveTaskDescription(description) {
     try {
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 256,
         messages: [{
           role: 'user',
@@ -355,7 +355,7 @@ Retorne APENAS a descrição melhorada, sem explicações.`
         : '';
 
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 4096,
         messages: [{
           role: 'user',
@@ -428,7 +428,7 @@ RETORNE APENAS JSON VÁLIDO (sem markdown, sem explicações):
   async generateWeeklyReport(data) {
     try {
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 4096,
         messages: [{
           role: 'user',
@@ -497,7 +497,7 @@ Seja direto, prático e focado em ação. Use emojis para indicadores visuais.`
   async predictProjectRisks(projects, teamPerformance) {
     try {
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 2048,
         messages: [{
           role: 'user',
@@ -553,7 +553,7 @@ RETORNE APENAS JSON VÁLIDO:
     try {
       const today = new Date().toLocaleDateString('pt-BR');
       const message = await this.client.messages.create({
-        model: 'claude-sonnet-4-20250514',
+        model: 'claude-sonnet-4-6',
         max_tokens: 4096,
         messages: [{
           role: 'user',
